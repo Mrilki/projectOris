@@ -1,0 +1,197 @@
+.profile-container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.posts-section {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.profile-header, .actions-container {
+    width: 30%;
+}
+
+.profile-header {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-username {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.profile-info {
+    margin: 1rem 0 2rem 0;
+}
+
+.profile-info p {
+    margin: 12px 0;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.profile-info span {
+    font-weight: 500;
+    color: #34495e;
+}
+
+.actions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button-container {
+    width: 100%;
+}
+
+.edit-profile-link, .friends-link, .admin-button, .add-post-button {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #e8eaed;
+    color: #2c3e50;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.edit-profile-link:hover, .friends-link:hover, .admin-button:hover, .add-post-button:hover {
+    background-color: #d1d5db;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.friends-link h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.post {
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.post-header {
+    margin-bottom: 15px;
+}
+
+.post-date {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.post-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.post-content {
+    margin: 15px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.post-footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.edit-button, .report-button, .show-comments-button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #e8eaed;
+    color: #2c3e50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.edit-button:hover, .report-button:hover, .show-comments-button:hover {
+    background-color: #d1d5db;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.comments-section {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    width: 100%;
+}
+
+.add-comment-form {
+    margin-top: 15px;
+}
+
+.comment-input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.comment-input-group input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.comment-input-group button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.comment-input-group button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .posts-section, .profile-header, .actions-container {
+        width: 100%;
+        margin-right: 0;
+    }
+}
